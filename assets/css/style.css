@@ -1,0 +1,14 @@
+body{
+    background-color: #000;
+    color: #fff;
+}
+#watch{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 20vh;
+    margin: auto;
+    border: 10px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+}
