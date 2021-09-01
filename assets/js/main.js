@@ -67,7 +67,7 @@ class WatchContainer {
     }
     isWeekend(d, m, y){
         let day = new Date(y,m-1,d).getDay();
-        return (day == 6 || day == 0 ? "Weekend" : "Working Day");
+        return (day == 6 || day == 0 ? " Wochenende." : " ein Werktag.");
     }
 }
 
@@ -117,6 +117,6 @@ output.innerHTML += "Um AM oder PM nach englischem Format zu erhalten: ";
 output.innerHTML += `"toLocaleString('en-US', { hour12: true }).slice(-2)"<br><br>`;
 
 output.innerHTML += "--- Level 1_6 ---<br><br>";
-output.innerHTML += watch.isWeekend(15,12,2019)+"<br>";
-output.innerHTML += watch.isWeekend(18,12,2019)+"<br>";
-output.innerHTML += watch.isWeekend(03,09,2021)+"<br>";
+output.innerHTML += "Am 15,12,2019 ist" + watch.isWeekend(15,12,2019)+"<br>";
+output.innerHTML += "Am 18.12.2019 ist" + watch.isWeekend(18,12,2019)+"<br>";
+output.innerHTML += "Am 05.09.2021 ist" + watch.isWeekend(05,09,2021)+"<br>";
